@@ -1,0 +1,21 @@
+{
+  "name": "anime-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
+    "vite": "^3.2.11"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^11.0.7",
+    "@nestjs/common": "^11.1.1",
+    "@nestjs/core": "^11.1.1",
+    "@nestjs/mapped-types": "^2.1.0",
+    "bootstrap": "^5.3.6"
+  }
+}

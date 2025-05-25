@@ -1,0 +1,18 @@
+.card.enlarged{
+    width: 600px;
+    height: auto;
+    min-height: 300px;
+    font-size: 1.1rem;
+  }
+
+  .card_img_enlarged{
+    width: 180px;
+    height: auto;
+    object-fit:scale-down;
+}
+
+.line{
+  display: flex; 
+  flex-direction: row; 
+  gap: 5px;
+}
