@@ -1,0 +1,154 @@
+/* Общие стили */
+body {
+  display: flex;              /* Для центрирования калькулятора */
+  justify-content: center;    /* Горизонтальное центрирование */
+  align-items: center;         /* Вертикальное центрирование */
+  min-height: 100vh;          /* Занимаем всю высоту экрана */
+  background-color: #2b2b2b;  /* Темно-серый фон */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Аккуратный шрифт */
+  background-image: url('211.jpg'); /* Добавляем изображение на фон */
+  background-size: cover;       /* Растягиваем изображение на весь фон */
+  background-blend-mode: multiply; /* Затемняем фон */
+  background: #050508;
+}
+
+.calculator {
+  background: rgba(10, 10, 18, 0.95); /* Очень темный полупрозрачный фон */
+  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid rgba(255,90,120,0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  margin: 25px;
+  text-align: center; /* Выравниваем содержимое калькулятора по центру */
+}
+
+/* Стиль для кнопки смены темы */
+.theme-button {
+  background: rgba(255,90,120,0.3);
+  color: #ff5a78;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Базовый стиль кнопки калькулятора */
+.my-btn {
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 60px;                  /* Увеличим размер кнопки */
+  height: 60px;                 /* Увеличим размер кнопки */
+  border-radius: 0px;           /* Делаем кнопки квадратными */
+  border: none;
+  background: rgba(30, 30, 46, 0.7);
+  color: white;              /* Светло-серый цвет текста */
+  font-size: 1.2rem;           /* Уменьшим размер шрифта */
+  font-family: 'Roboto', sans-serif; /* Более современный шрифт */
+  font-weight: 300;             /* Делаем шрифт тоньше */
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease; /* Плавный переход цвета */
+}
+
+/* Hover эффект */
+.my-btn:hover {
+  background: rgba(108, 92, 231, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
+}
+
+/* Active эффект */
+.my-btn:active {
+  transform: translateY(0);
+}
+
+/* Стиль для основных операций */
+.my-btn.primary {
+  background: rgba(255,90,120,0.4);
+  
+}
+
+/* Стиль для второстепенных операций */
+.my-btn.secondary {
+  background: rgba(70, 70, 90, 0.7);
+
+}
+
+/* Стиль для кнопки Execute (=) */
+.my-btn.execute {
+  width: 125px;                /* Увеличим ширину кнопки */
+  border-radius: 0px;           /* Убираем округлость */
+}
+
+/* Стиль для поля вывода результата */
+.result {
+  width: 250px;                /* Увеличим размер окна вывода */
+  height: 70px;                 /* Увеличим размер окна вывода */
+  margin-bottom: 20px;         /* Увеличим отступ снизу */
+  padding: 15px;               /* Увеличим отступ внутри */
+  background: #333333;        /* Темно-серый фон */
+  text-align: right;
+  color: #caa6a6;              /* Бирюзовый цвет текста */
+  font-size: 2rem;             /* Увеличим размер шрифта */
+  font-family: 'Roboto Mono', monospace; /* Моноширинный шрифт */
+  border-radius: 10px;          /* Скругленные края */
+  overflow: hidden;             /* Скрываем переполнение текста */
+}
+
+/* Стиль для надписи внизу */
+.footer {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+/* Стиль для выпадающего списка */
+select {
+  background: rgba(30, 30, 46, 0.7);
+  color: white;
+  border: 1px solid rgba(255,90,120,0.3);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Стили для сворачивающихся подробностей */
+details {
+  margin-bottom: 10px;
+  color: #aaa;
+  background: rgba(10, 10, 18, 0.5);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,90,120,0.2);
+}
+
+summary {
+  cursor: pointer;
+  color: #d2d2d2;
+}
+
+details p {
+  color: #e0e0e0; /* Более светлый серый цвет для текста */
+}
+
+/* Стиль для цели ЛР */
+.objective {
+  color: #aaa;
+  background: rgba(10, 10, 18, 0.5);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ff5a78;
+  font-weight: bold;
+}
+body.dark-theme {
+  background-color: #121212; /* Еще более темный фон */
+  color: #fff;
+}
+function toggleTheme() {
+  document.body.classList.toggle("dark-theme"); // Добавляем/удаляем класс 'dark-theme'
+}

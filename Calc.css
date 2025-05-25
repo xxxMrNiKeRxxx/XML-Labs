@@ -1,0 +1,169 @@
+/* Общие стили */
+body {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  min-height: 100vh;         
+  background-color: #ffffff;  /* Белый фон по умолчанию (светлая тема) */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-image: url("https://i.pinimg.com/originals/bb/ec/3b/bbec3b57221e161ef786d99afdce036d.jpg"); /* Добавляем изображение на фон*/
+  background-size: cover;       /* Растягиваем изображение на весь фон */
+}
+
+.calculator {
+  text-align: center; 
+}
+
+/* Стиль для кнопки смены темы */
+.theme-button {
+  background-color: #007bff; /* Светло-синий цвет кнопки */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Базовый стиль кнопки калькулятора */
+.my-btn {
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 60px;                  
+  height: 60px;                 
+  border-radius: 0px;          
+  border: none;
+  background: #f0f0f0;         
+  color: #333;                  
+  font-size: 1.2rem;           
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300;             
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease; 
+}
+
+/* Hover эффект */
+.my-btn:hover {
+  background-color: #007bff;   
+  color: #fff;                  
+}
+
+/* Active эффект */
+.my-btn:active {
+  filter: brightness(90%);
+}
+
+/* Стиль для основных операций */
+.my-btn.primary {
+  background: #007bff;         
+  color: #fff;
+}
+
+/* Стиль для второстепенных операций */
+.my-btn.secondary {
+  background: #e0e0e0;         
+  color: #333;
+}
+
+/* Стиль для кнопки Execute (=) */
+.my-btn.execute {
+  width: 125px;                
+  border-radius: 0px;          
+}
+
+/* Стиль для поля вывода результата */
+.result {
+  width: 250px;                
+  height: 70px;                
+  margin-bottom: 20px;         
+  padding: 15px;               
+  background: #f0f0f0;        
+  text-align: right;
+  color: #007bff;              
+  font-size: 2rem;             
+  font-family: 'Roboto Mono', monospace; 
+  border-radius: 10px;         
+  overflow: hidden;            
+}
+
+/* Стиль для надписи внизу */
+.footer {
+  margin-top: 20px;
+  color: #555;                 
+  font-size: 0.8rem;
+}
+
+/* Стиль для выпадающего списка */
+select {
+  background-color: #f0f0f0;  
+  color: #333;                 
+  border: 1px solid #ccc;      
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Темная тема */
+body.dark-theme {
+  background-color: #2b2b2b;  /* Темно-серый фон */
+  color: #fff;                /* Белый текст */
+}
+
+body.dark-theme .my-btn {
+  background: #3e3e3e;        /* Темно-серый цвет кнопки */
+  color: #d4d4d4;             /* Светло-серый цвет текста */
+}
+
+body.dark-theme .result {
+  background: #333333;        /* Темно-серый фон для результата */
+  color: #8b0000;             /* Бирюзовый цвет текста для результата */
+}
+
+body.dark-theme .theme-button {
+  background-color: #8b0000;  /* Темный цвет кнопки смены темы */
+}
+
+body.dark-theme .my-btn.primary {
+  background: #8b0000;        /* Темный цвет для основных операций */
+}
+
+body.dark-theme .my-btn.secondary {
+  background: #505050;        /* Чуть более светлый серый для второстепенных операций */
+}
+
+.footer {
+  color: #888888;              /* Темный серый цвет для текста внизу */
+}
+
+details p {
+  color: #e0e0e0;              /* Более светлый серый цвет для текста */
+}
+
+/* Стили для сворачивающихся подробностей */
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  cursor: pointer;
+  color: #d2d2d2;
+}
+
+/* Затемняющий элемент */
+body.dark-theme::after {
+  content: "";                /* Пустое содержимое */
+  position: absolute;         /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Полупрозрачный черный фон */
+  z-index: -1;                /* За другими элементами */
+}
+
+
+.highlight {
+  color: #ff9801;
+
+
