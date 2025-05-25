@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "module": "ES2020", // Use a modern module system
+      "target": "ES2015"  // Crucial: Specify ES6/ES2015 or later
+      // You could use "ES2016", "ES2020", "ESNext", etc. ES2015 is usually safe.
+    },
+    "exclude": [
+      "node_modules" // Exclude checking dependencies
+    ]
+  }
