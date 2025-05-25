@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "src": "https://avatars.mds.yandex.net/i?id=9fec54d9c6a3263e0e916c7525e40a16_l-5884402-images-thumbs&n=13",
+    "title": "Наруто: Ураганные хроники",
+    "description": "История о Наруто Узумаки, шумном ниндзя-подростке, который мечтает достичь звания Хокаге.",
+    "episodes": 500
+  },
+  {
+    "id": 2,
+    "src": "https://i.pinimg.com/736x/77/94/c5/7794c5dbef05eb983d6779da80ff3c19.jpg",
+    "title": "Атака титановя",
+    "description": "Человечество живет в городах, окруженных огромными стенами, защищающими от титанов.",
+    "episodes": 75
+  },
+  {
+    "id": 3,
+    "src": "https://www.intoxianime.com/wp-content/uploads/2019/12/r1-tile.jpg",
+    "title": "Магическая битва",
+    "description": "История о Юдзи Итадори, который становится сосудом для могущественного проклятия.",
+    "episodes": 24
+  },
+  {
+    "title": "asd",
+    "description": "asda",
+    "episodes": 10,
+    "src": "https://steamuserimages-a.akamaihd.net/ugc/2079019457927111911/45068F1A462AF6EB757ADABDD621AB5FDE49E38E/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true",
+    "rating": 10,
+    "id": 4
+  }
+]
